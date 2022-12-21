@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos em HTML5</title>
+   
+</head>
+<body>    
+   <h1>Videos hospedado Localmente</h1> 
+   <p>Este vídeo está hospedado no meu próprio servidor.</p>
+   <h2>Inserindo de formar simples </h2>
+   <video controls width="560px"  src="midea/video-hd.mp4" poster="imagem/limoes-capa.png"></video><br>
+   <h2>Inserindo videos de forma completa com varíos formatos</h2>
+   <video controls width="560px" poster="imagem/limoes-capa.png">
+       <source src="midea/video-hd.ogv" type="video/ogv">
+       <source src="midea/video-m4v.m4v" type="video/m4v">
+       <source src="midea/video-webm.webm" type="video/webm">
+       
+   </video>
+   <p>caso o video não passe <a href="midea/video-hd.mp4" target="_blank">click aqui</a></p>
+   <h1>Inserindo Video do YouTube</h1>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/mdyjXHAsOmM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <h1>Inserindo Video do Vimeo</h1>
+   <iframe src="https://player.vimeo.com/video/64496692?h=a9dd67bcdb&byline=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+
+</body>
+</html>

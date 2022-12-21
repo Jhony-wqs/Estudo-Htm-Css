@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* em HTML e id e no CSS e #(so pode um id por elemento 
+   em HTML é class no CSS é (.) ponto (pode vários por elementos*/
+@font-face {
+    font-family:"love" ;
+    src: url(love\ larry\ ttf.ttf) ;
+    font-weight: normal;
+}
+
+
+body{
+    background-color: #90f790;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: #217021;
+}
+h1#principal{
+    background-color: green;
+    text-align: center;
+    color: white;
+    font-family: 'Press Start 2P', cursive; 
+    
+}
+h2{
+    color: #0b300b8e;
+}
+.basico{
+    background-color: chartreuse;
+}
+.intermediario{
+    background-color: #797919;
+}
+.avancado{
+    background-color: yellow;
+}
+.centro{
+    text-align: center;
+    font-family:"love";
+    font-weight: normal;
+    
+}
