@@ -1,0 +1,117 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    background-image: url(wallpaper005.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 10px;
+}
+#titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #380b61;
+    margin-left: 7%;
+    text-align: center;
+}
+
+#subtitulo {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #380b61;
+    text-align: center;
+}
+
+fieldset {
+    border: 0;
+}
+
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    color: #59429d;
+    margin-left: 26%;
+    margin-right: 26%;
+    margin-top:2px;
+    text-align: justify;
+    border: 1px solid black;
+    padding:15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.603);
+}
+
+input,
+select,
+textarea,
+button {
+    border-radius: 5px;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: #59429d;
+    display: block;
+   
+}
+
+fieldset.grupo .campo {
+    float: left;
+    margin-right: 1em;
+
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo select,
+.campo textarea
+ {
+    display: block;
+    padding: 0.2em;
+    border: 1px solid #59429d;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    background: #e0e0f8;
+}
+
+.button {
+    text-align: center;
+    font-size: 1em;
+    background-color: #59429d;
+    border: 0px;
+    margin-bottom: 1em;
+    color: #ffff;
+    padding: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.button:hover {
+    background-color: #ccbbff;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+    
+}
+
+.button,
+select {
+    cursor: pointer;
+}
+
+#check {
+    display: inline-block;
+}
+.text{
+    text-align: center;
+    
+}
+.sombra{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.466);
+}
