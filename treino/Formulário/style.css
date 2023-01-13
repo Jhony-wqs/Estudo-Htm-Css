@@ -115,3 +115,14 @@ select {
 .sombra{
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.466);
 }
+#senioridade{
+    font-size: 15px;
+}
+#senioridade:hover{
+    background-color: mediumblue;
+    color: white;
+}
+.t{
+    width: 150px;
+    margin: 0px;
+}
