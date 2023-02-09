@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    background-color:#c2b4b4;  
+}
+
+header{
+    background-color: gray;
+    text-align: center;
+   
+
+}
+
+header > h1{
+    padding: 10px;
+    text-align: center;
+}
+
+#burguer{
+    background-color:rgb(199, 193, 193);
+    padding: 5px;  
+    width: 40px;
+    border-radius: 5px 5px 0px 0px ;
+    
+}
+
+#burguer:hover{
+    background-color: rgb(54, 54, 54);
+    cursor: pointer;
+    
+}
+
+menu{
+    display: none;
+}
+
+menu > ul{
+    
+    list-style-type: none;
+    
+}
+
+menu > ul > li > a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(71, 70, 70);
+    color: white;
+    border-top: 2px solid rgb(172, 170, 170);
+
+}
+
+menu > ul > li > a:hover{
+    background-color: gray;
+}
+
+main{
+    width: 80vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    margin-bottom: 20px;
+   
+}
+
+article > h2{
+    padding-bottom: 20px;
+}
+
+article > p{
+    text-align: justify;
+    margin-bottom: 10px;
+    text-indent: 20px;
+}
+ footer{
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    
+  
+ }
+
+ footer > p > a {
+    font-family: cursive;
+    text-decoration: none;
+    
+ }
+ footer  a {
+   color:black;
+ }
+
+ footer a:hover{
+    color:blue;
+    text-decoration: underline;
+ }
