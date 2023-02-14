@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Displey Flex</title>
+    <style>
+        div.container-pai{
+            background-color: aqua;
+            height: 500px;
+            display: flex;
+            flex-direction: row ;
+            justify-content: end;
+            /* flex-direction:  eo justify-content:serve para alinhar o main exis */
+            
+        }
+        div.itens{
+            border: 2px solid black;
+            background-color: blue;
+            text-align: center;
+        
+        }
+    </style>
+</head>
+<body>
+    <h1>DISPLEY FLEX NO MAIN AXIS</h1>
+    <div class="container-pai">
+        <div class="itens">itens A</div>
+        <div class="itens">itens B</div>
+        <div class="itens">itens C</div>
+    </div>
+</body>
+</html>
