@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Displey Flex</title>
+    <title>Displey Flex</title>
+    <style>
+        div.pai{
+            background-color: rgba(3, 89, 250, 0.699);
+            height: 50vh;
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items:center;
+            flex-wrap: wrap;
+            align-content: center;
+            row-gap: 10px;
+            column-gap: 30px;
+            
+            
+              
+        }
+       
+        div.filho-1{
+            background-color: brown;
+            border-radius: 5px;
+            text-align: center;
+            height: 80px;
+            width: 80px;
+            border: 2px solid black;
+            order: 1;
+        }
+        div.filho-2{
+            background-color: lawngreen;
+            border-radius: 5px;
+            text-align: center;
+            height: 80px;
+            width: 80px;
+            border: 2px solid black;
+            order: 1;
+        }
+        div.filho-3{
+            background-color: chocolate;
+            border-radius: 5px;
+            text-align: center;
+            height: 80px;
+            width: 80px;
+            border: 2px solid black;
+            order: -1;
+
+            /* a propriedade order serve para ordenar as caixas dentro da div de acordo com que a pessoa queria colocar podendo usar valores positivos quanto negativos.
+            para intercalar os plocos e so colocar mesmo valor para os que quiserem  intercalar. */
+        }
+    </style>
+</head>
+<body>
+    <div class="pai">
+        <div class="filho-1">itens 1</div>
+        <div class="filho-2">itens 2</div>
+        <div class="filho-3">itens 3</div>
+        <div class="filho-1">itens 1</div>
+        <div class="filho-2">itens 2</div>
+        <div class="filho-3">itens 3</div>
+        <div class="filho-1">itens 1</div>
+        <div class="filho-2">itens 2</div>
+        <div class="filho-3">itens 3</div>
+        <div class="filho-1">itens 1</div>
+        <div class="filho-2">itens 2</div>
+        <div class="filho-3">itens 3</div>
+    </div> 
+</body>
+</html>
