@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Displey Flex</title>
+    <style>
+        div.pai{
+            background-color: rgb(0, 255, 21);
+            height: 50vh;
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items:center;
+            flex-wrap: wrap; 
+              /* propriedade flex-wrap que serve para quebrar a linha e colocar as caixas na parte de baixo quando na de cima caso o conteudo não caiba na mesma linha ou quando o navegador ou outros telas menores não couber as caixas 
+              * tem uma shothand do flex-direction e so usar o flex-flow: column e o wrap desejado */
+
+        }
+        div.filho{
+            background-color: rgb(255, 0, 119);
+            height: 80px;
+            width: 80px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="pai">
+        <div class="filho">itens 1</div>
+        <div class="filho">itens 2</div>
+        <div class="filho">itens 3</div>
+        <div class="filho">itens 1</div>
+        <div class="filho">itens 2</div>
+        <div class="filho">itens 3</div>
+        <div class="filho">itens 1</div>
+        <div class="filho">itens 2</div>
+        <div class="filho">itens 3</div>
+        <div class="filho">itens 1</div>
+        <div class="filho">itens 2</div>
+        <div class="filho">itens 3</div>
+    </div> 
+</body>
+</html>
