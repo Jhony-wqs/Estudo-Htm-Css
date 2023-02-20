@@ -14,7 +14,7 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             align-content: center;
             row-gap: 10px;
             column-gap: 30px;
@@ -30,7 +30,10 @@
             height: 80px;
             width: 80px;
             border: 2px solid black;
-            order: 1;
+            order: 0;
+            align-self: flex-end;
+            
+    
         }
 
         div.filho-2 {
@@ -40,7 +43,8 @@
             height: 80px;
             width: 80px;
             border: 2px solid black;
-            order: 1;
+            order: 0;
+            align-self:flex-start ;
         }
 
         div.filho-3 {
@@ -50,21 +54,20 @@
             height: 80px;
             width: 80px;
             border: 2px solid black;
-            order: -1;
-
-            /* a propriedade order serve para ordenar as caixas dentro da div de acordo com que a pessoa queria colocar podendo usar valores positivos quanto negativos.
-            para intercalar os plocos e so colocar mesmo valor para os que quiserem  intercalar. */
-        }
+            order: 0;
+            align-self: center;
+            }
+            /* A propriedade align-self serve para posicionar o elemnto de acordo com a posição que voçê quer colocor em relação a outras caixas */
     </style>
 </head>
 
 <body>
-    <h1>propriedade (order:)</h1>
+    <h1>propriedade (align-self:)</h1>
     <div class="pai">
         <div class="filho-1">itens 1</div>
         <div class="filho-2">itens 2</div>
         <div class="filho-3">itens 3</div>
-        <div class="filho-1">itens 1</div>
+        <!-- <div class="filho-1">itens 1</div>
         <div class="filho-2">itens 2</div>
         <div class="filho-3">itens 3</div>
         <div class="filho-1">itens 1</div>
@@ -72,7 +75,7 @@
         <div class="filho-3">itens 3</div>
         <div class="filho-1">itens 1</div>
         <div class="filho-2">itens 2</div>
-        <div class="filho-3">itens 3</div>
+        <div class="filho-3">itens 3</div> -->
     </div>
 </body>
 

@@ -9,12 +9,13 @@
     <style>
         div.pai {
             background-color: rgba(3, 89, 250, 0.699);
-            height: 50vh;
+            /* height: 50vh; */
+            width: 400px;
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             align-content: center;
             row-gap: 10px;
             column-gap: 30px;
@@ -27,44 +28,50 @@
             background-color: brown;
             border-radius: 5px;
             text-align: center;
-            height: 80px;
-            width: 80px;
+            height: 150px;
+            width: 150px;
             border: 2px solid black;
-            order: 1;
+            order: 0;
+            flex-grow: 0;
+            flex-shrink: 0;
         }
 
         div.filho-2 {
-            background-color: lawngreen;
+            background-color: rgb(0, 252, 63);
             border-radius: 5px;
             text-align: center;
-            height: 80px;
-            width: 80px;
+            height: 150px;
+            width: 150px;
             border: 2px solid black;
-            order: 1;
+            order: 0;
+            flex-grow: 0;
+            flex-shrink: 1;
         }
 
         div.filho-3 {
-            background-color: chocolate;
+            background-color: rgb(150, 59, 101);
             border-radius: 5px;
             text-align: center;
-            height: 80px;
-            width: 80px;
+            height: 150px;
+            width: 150px;
             border: 2px solid black;
-            order: -1;
-
-            /* a propriedade order serve para ordenar as caixas dentro da div de acordo com que a pessoa queria colocar podendo usar valores positivos quanto negativos.
-            para intercalar os plocos e so colocar mesmo valor para os que quiserem  intercalar. */
+            order: 0;
+            flex-grow: 0;
+            flex-shrink: 2;
         }
+        /* flex-grow serve para fazer as divs crscer de acorde com o espaço que ela pode ocupar na linha proporcional a os  outros blocos */
+          /*a propriedade flex-shrink serve para encolher a div proporcional a outras divs que esta na mesma caixa e ela so funciona com a propriedade flex-wrpa igual a nowrap  */
+          /* propriedade flex-basis  serve para modificar o tamanho da div caso não tenha previamente colocado nenhuma altura e nenhuma largura*/
     </style>
 </head>
 
 <body>
-    <h1>propriedade (order:)</h1>
+    <h1>propriedade (flex-grow:) e (flex-shrink)</h1>
     <div class="pai">
         <div class="filho-1">itens 1</div>
         <div class="filho-2">itens 2</div>
         <div class="filho-3">itens 3</div>
-        <div class="filho-1">itens 1</div>
+        <!-- <div class="filho-1">itens 1</div>
         <div class="filho-2">itens 2</div>
         <div class="filho-3">itens 3</div>
         <div class="filho-1">itens 1</div>
@@ -72,7 +79,7 @@
         <div class="filho-3">itens 3</div>
         <div class="filho-1">itens 1</div>
         <div class="filho-2">itens 2</div>
-        <div class="filho-3">itens 3</div>
+        <div class="filho-3">itens 3</div> -->
     </div>
 </body>
 
